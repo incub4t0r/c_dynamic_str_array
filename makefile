@@ -1,8 +1,8 @@
 CC = gcc
-CFLAGS = -Wall
+CFLAGS = -Wall -Iinclude -Isrc
 LDFLAGS =
 
-SRCS = alloc_funcs.c array.c test.c
+SRCS = src/alloc_funcs.c src/array.c test.c
 OBJS = $(SRCS:.c=.o)
 DEPS = $(SRCS:.c=.d)
 TARGET = test
