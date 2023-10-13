@@ -1,19 +1,21 @@
 #include <stdio.h>
-#include "array.h"
+#include "wordlist.h"
 #include <stdlib.h>
 int
 main(void)
 {
-    str_array *str_arr = safe_malloc_str_array();
-    if (!str_arr) {
+    wordlist_t *wordlist = wordlist_create();
+    if (!wordlist) {
         exit(EXIT_FAILURE);
     }
 
-    for (int i = 0; i < 123456789; i++)
+    char word[100] = "hello";
+    for (int i = 0; i < 100; i++)
     {
-        append_str(str_arr, "Hello");
+        wordlist_append(wordlist, word);
     }
 
-    free_str_array(str_arr);
+    wordlist_print(wordlist);
+    wordlist_free(wordlist);
     exit(EXIT_SUCCESS);
 }
