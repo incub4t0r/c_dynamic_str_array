@@ -4,7 +4,7 @@ This repo contains my c and header files to store and modify a heap array of str
 
 ## TODO
 
-- [X] Update array code to handle variable length strings (I have a fix for this and have the code but havent pushed it yet.)
+- [X] ~~Update array code to handle variable length strings (I have a fix for this and have the code but havent pushed it yet.)~~
 
 ## Usage
 
